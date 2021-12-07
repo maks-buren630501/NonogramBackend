@@ -2,7 +2,7 @@
 
 **This project implements nonogram backend logic.**
 
-![img.png](Documentation/img.png)
+![img.png](Documentation/BaseNonogram.png)
 
 ## Will be implemented:
 
