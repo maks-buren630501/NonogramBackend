@@ -1,12 +1,12 @@
-#Nonogram backend
+# Nonogram backend
 
 **This project implements nonogram backend logic.**
 
 ![img.png](Documentation/img.png)
 
-##Will be implemented:
+## Will be implemented:
 
-- ###First sprint:
+- ### First sprint:
   - [ ] Logging system;
   - [ ] User login and logout;
   - [ ] User registration;
