@@ -7,6 +7,7 @@
 ## Will be implemented:
 
 - ### First sprint:
+  - [ ] Project structure;
   - [ ] Logging system;
   - [ ] User login and logout;
   - [ ] User registration;
