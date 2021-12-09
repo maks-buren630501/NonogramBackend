@@ -1,7 +1,10 @@
 from fastapi import FastAPI
 
+from Utils.Logger.middleware import LoggingMiddleware
+
 app = FastAPI()
 
+app.add_middleware(LoggingMiddleware)
 
 @app.get("/")
 async def root():
