@@ -15,7 +15,7 @@ def test_success(test_app):
 def test_zero_division(test_app):
     response = test_app.get("/9/0")
     assert response.status_code == 500
-    assert response.json() == {"detail": "ZeroDivisionError"}
+    assert response.json() == {"detail": "Fatal error"}
 
 
 def test_type_error(test_app):

@@ -1,10 +1,11 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 
-from Utils.Logger.middleware import LoggingMiddleware
+from Utils.Logger.middleware import LoggingRoute
 
 app = FastAPI()
 
-app.add_middleware(LoggingMiddleware)
+app.router.route_class = LoggingRoute
+
 
 @app.get("/")
 async def root():
@@ -18,7 +19,5 @@ async def say_hello(name: str):
 
 @app.get("/{dividend}/{divisor}")
 async def division(dividend: int, divisor: int):
-    try:
-        return {"result": f"{round(dividend / divisor, 2)}"}
-    except ZeroDivisionError:
-        raise HTTPException(detail="ZeroDivisionError", status_code=500)
+    return {"result": f"{round(dividend / divisor, 2)}"}
+
