@@ -8,7 +8,8 @@
 
 - ### First sprint:
   - [x] Project structure;
-  - [x] Logging system;
+  - [ ] Error handler;
+  - [ ] Logging system;
   - [ ] User login and logout;
   - [ ] User registration;
-  - [ ] Sessions (registered and anonymous users);
+  - [ ] Sessions (registered and anonymous users).
