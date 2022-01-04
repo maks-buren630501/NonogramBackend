@@ -27,4 +27,3 @@ class LOGGERS:
         FILE_NAME='requests.log',
         FORMAT='%(levelname)s %(asctime)s %(message)s'
     )
-
