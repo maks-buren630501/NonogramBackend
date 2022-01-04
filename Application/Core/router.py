@@ -6,7 +6,7 @@ from fastapi.routing import APIRoute
 from starlette.requests import Request
 from starlette.responses import Response
 
-from Utils.Logger.logging import get_logger
+from Application.Core.Logger.logging import get_logger
 
 
 logger = get_logger(__name__)

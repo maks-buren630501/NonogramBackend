@@ -2,7 +2,7 @@ import logging
 import logging.config
 import os
 
-from Utils.Core.settings import LOGGERS
+from Application.Core.settings import LOGGERS
 
 
 if not os.path.exists(LOGGERS.APP_STATE.PATH):
